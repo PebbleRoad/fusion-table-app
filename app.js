@@ -61,7 +61,6 @@
         init: function(options){
 
             var self = this
-            console.log(self)
 
             /* Extend options */
 
