@@ -1,8 +1,6 @@
 (function(){
 
     'use strict';
-
-    //https://www.googleapis.com/fusiontables/v1/query?sql=SELECT%20*%20FROM%201Z1shMJATohhlfpfoiUSARs7GXuHpVSV5qRRa8obx%20LIMIT%201000&key=AIzaSyBt51Kephzt5i8vo9vmZY1rCbzj-_mhNyY&callback=jQuery1111010151201044209301_1417074242944&_=1417074242945
     
 
     var app = {
