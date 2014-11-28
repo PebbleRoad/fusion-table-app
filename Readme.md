@@ -1,6 +1,14 @@
-# Google Fusion Tables to responsive, searchable HTML tables
+# Google Fusion Tables to HTML tables
 
-Display data from Google Fusion tables in table or card format using Datatables
+Display data from Google Fusion Tables in responsive and searchable table or card format.
+
+# Features
+
+* Beautiful table design
+* Multiple formats - card or table
+* Searchable
+* Responsive
+* Pagination
 
 ## Demo
 
