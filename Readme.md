@@ -1,4 +1,4 @@
-# Google fusion table to Datatables
+# Google Fusion Tables to responsive, searchable HTML tables
 
 Display data from Google Fusion tables in table or card format using Datatables
 
