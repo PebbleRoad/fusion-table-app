@@ -1,6 +1,6 @@
 # Google Fusion Tables to HTML tables
 
-An app to display data from Google Fusion Tables in responsive, searchable HTML table or card format
+An app to display data from Google Fusion Tables in responsive, searchable HTML table or card format.
 
 # Features
 
