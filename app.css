@@ -91,6 +91,10 @@
             cursor: pointer;
         }
 
+        .dataTables_paginate .current{
+            color: #000;
+        }
+
         .dataTables_paginate .disabled{
             opacity: 0.4;
         }

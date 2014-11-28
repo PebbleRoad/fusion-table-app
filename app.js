@@ -60,6 +60,8 @@
 
             var self = this
 
+            this.instances = [];
+
             /* Extend options */
 
             this.options = $.extend({}, this.defaults, options)
@@ -69,8 +71,9 @@
             options.el.each(function(){
 
                 var $this = $(this),
-                    id = $this.data('fusion-table'),
-                    url = self.prepare(id)
+                    id = self.options.dataSource || $this.data('fusion-table'),
+                    url = self.prepare(id),
+                    $t
 
                 
                 /* Append loading data */
@@ -95,7 +98,7 @@
 
                     /* Initialize datatable */
 
-                    var $t = $this.DataTable({
+                    $t = $this.DataTable({
                             data           : data.rows,
                             columns        : columns,
                             responsive     : true,
@@ -129,7 +132,10 @@
                             $t.page.len(-1).draw();
                         }
 
-                    })
+                    });
+
+
+                    $this.data('datatable', $t);                    
 
                 })
 
@@ -143,14 +149,20 @@
 
 
     /**
+     * Return window object
+     */
+    
+    return window._app = app;
+
+
+    /**
      * On load
      */
     
     $(function(){
 
-        app.init({
-            el: $('.datatable')
-        })
+        
+        
     })
 
     
