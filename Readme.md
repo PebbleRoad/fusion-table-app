@@ -10,7 +10,7 @@ Display data from Google Fusion tables in table or card format using Datatables
 
 Add table markup in your html
 
-    <table class="datatable" data-fusion-table="1Z1shMJATohhlfpfoiUSARs7GXuHpVSV5qRRa8obx" cell-spacing="0" width="100%">
+    <table class="datatable" cell-spacing="0" width="100%">
     
 Make sure to add `data-fusion="FUSION_TABLE_ID"`, ID of the fusion table you want to display
 
@@ -19,6 +19,7 @@ Initialize the app
     $(function(){
 
         app.init({
-            el: $('.datatable') // Table selector
+            el: $('.datatable'),
+            dataSource: '1No1xirmHhmV99FdzCBC32AWAmwZaLuEZ2qAxhUA' // Your google fusion table ID
         })
     })
